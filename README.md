@@ -7,7 +7,10 @@ Widget with push api to send data to it
 
 ## Clone 
 ```
+cd /var/www
 git clone https://github.com/dfriedenberger/push-widget
+chown -R www-data push-widget/
+chgrp -R www-data push-widget/
 ```
 
 ## Configure apache
