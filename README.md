@@ -1,5 +1,5 @@
 widget with push API to send data to your widget
-![widget](https://raw.githubusercontent.com/dfriedenberger/jawis/master/widget.png)
+![widget](https://raw.githubusercontent.com/dfriedenberger/push-widget/master/widget.png)
 
 
 # Quick Start
@@ -11,12 +11,15 @@ git clone https://github.com/dfriedenberger/push-widget
 
 ## Configure apache
 ```
-
+<VirtualHost *:80>
+    ServerName wetter.frittenburger.de
+    DocumentRoot /var/www/push-widget/public
+</VirtualHost>
 ```
 
 ## Install
 Call your url in browser
-![widget](https://raw.githubusercontent.com/dfriedenberger/jawis/master/widget.png)
+![widget](https://raw.githubusercontent.com/dfriedenberger/push-widget/master/widget.png)
 
 ## Send data from somewhere in the world
 ### Create Json file 
@@ -53,12 +56,8 @@ cat data.json
 ```
 curl -i -X POST --header "Authorization: Bearer d38ec3d5-df03-4b43-8c18-319d58a167e4" 
 	--header "Accept:application/json" --header "Content-Type: application/json" 
-	-d @data.json  http://localhost:8080/api/data
+	-d @data.json  http://wetter.frittenburger.de/api/data
 ```
-
-
-
-
 
 # Contact
 Dirk Friedenberger, Waldaschaff, Germany
