@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Install Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+</head>
+<body>
+	    <div class="container">
+		 	<form class="form-horizontal" method="POST" action="install">
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>{L_PREFERENCES}</legend>
+
+				{$message}
+				
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="rootpath">{L_TOKEN}</label>  
+				  <div class="col-md-4">
+				  <input id="token" name="token" type="text" value="{$token}" class="form-control input-md">
+				  <span class="help-block">{L_TOKENHELP}</span>  
+				  </div>
+				</div>
+				
+				<!-- Button -->
+				<div class="form-group">
+				  <div class="col-md-4 col-md-offset-4">
+					<button id="singlebutton" name="singlebutton" class="btn btn-primary">{L_INSTALL}</button>
+				  </div>
+				</div>
+				
+				</fieldset>
+			</form>
+	    </div>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>
