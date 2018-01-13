@@ -1,5 +1,6 @@
 widget with push API to send data to your widget
-![widget](https://raw.githubusercontent.com/dfriedenberger/push-widget/master/widget.png)
+
+![widget](widget.png)
 
 
 # Quick Start
@@ -19,7 +20,8 @@ git clone https://github.com/dfriedenberger/push-widget
 
 ## Install
 Call your url in browser
-![widget](https://raw.githubusercontent.com/dfriedenberger/push-widget/master/widget.png)
+
+![install](install.png)
 
 ## Send data from somewhere in the world
 ### Create Json file 
