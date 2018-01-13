@@ -1,4 +1,4 @@
-widget with push API to send data to your widget
+Widget with push api to send data to it
 
 ![widget](widget.png)
 
@@ -68,26 +68,4 @@ Write me (oder Schreibe mir)
 projekte@frittenburger.de
 
 http://www.frittenburger.de 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### extracted json saved to file
-```
-{
-  "city": "Waldaschaff",
-  "date": "Sunday 07 Jan 2018",
-  "temp": "4.0 Celsius"
-}
-```
-
 
